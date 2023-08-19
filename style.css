@@ -1,0 +1,64 @@
+body {
+    font-family: 'Sono', sans-serif;
+}
+
+  /* I need to:
+  1. Center the container in the page
+  2. Center the items in the plans
+  3. Give them the appropriate background, font-family, texture, and size */
+
+  .pricing-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .pricing-plan{
+    flex: 1;
+    max-width: 400px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .plan-title, .plan-price{
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .plan-title{
+    font-size: 24px;
+  }
+
+  .plan-price{
+    font-size: 48px;
+  }
+
+  .plan-features{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .plan-features li{
+    margin-bottom: 20px;
+  }
+
+  .plan-button{
+    background-color: orangered;
+    border-color: orangered;
+    border: 5px;
+    color: white;
+    padding: 10pz;
+  }
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1250px) {
+    .pricing-container{
+      flex-direction: column;
+      height: 100%;
+    }
+  }
